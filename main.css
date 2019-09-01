@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #282c34;
+  background-color: #2a313fee;
   font-family: "Lato", sans-serif;
 }
 body header {
@@ -19,6 +19,32 @@ header {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.contact-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact-bar a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 10px;
+  color: white;
+  border-radius: 3px;
+}
+.contact-bar a:hover {
+  transform: scale(1.2);
+}
+.contact-bar .github:hover {
+  background-color: #28A945;
+}
+.contact-bar .linkedin:hover {
+  background-color: #007bb5;
+}
+.contact-bar .email:hover {
+  background-color: #D54B3D;
 }
 
 .info {
@@ -68,7 +94,7 @@ div a:hover {
   max-width: 350px;
   max-height: 200px;
   background: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: -9px 9px 0px 0px rgba(0, 0, 0, 0.2);
   margin: 20px 20px;
 }
 
