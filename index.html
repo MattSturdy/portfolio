@@ -32,58 +32,83 @@
       <div class="container">
         <div class="ribbon ribbon-top-right react"><span>React</span></div>
 
-        <div class="link-container">
-          <a href="https://todo.mattsturdy.co.uk/" target="_blank"></a>
-        </div>
+
+        <a class="site-link" href="https://todo.mattsturdy.co.uk/" target="_blank"></a>
+
       </div>
     </article>
     <article class="highlight">
       <p>
         A fantastic group project that gave us the opportunity to build a much
         larger application than we had previously tackled in React. We learnt
-        while we where building as this was our first exposure to the library,
-        but some of the best learning experiences from the project was working
-        as a team, managaing the workloads and how to manage expectations and
+        while we were building as this was our first exposure to the library,
+        but some of the best learning experiences from the project were working
+        as a team, managaing the workloads together and how to manage expectations and
         deliverables to a real product owner.
       </p>
       <div class="container">
         <div class="ribbon ribbon-top-right react"><span>React</span></div>
 
-        <div class="link-container">
-          <a href="https://todo.mattsturdy.co.uk/" target="_blank"></a>
-        </div>
+
+        <a class="site-link" id="hedira" href="https://app.hedira.io/welcome/" target="_blank"></a>
+
 
       </div>
     </article>
   </section>
   <section class="sites">
     <div class="container">
-      <div class="ribbon ribbon-top-right react"><span>React</span></div>
-      <i class="fas fa-info-circle"></i>
-      <div class="link-container">
-        <a href="https://todo.mattsturdy.co.uk/" target="_blank"></a>
+      <div id="todo" class="hide-info">
+        <p>A simple to to list, made to consolidate my learning around firebase authentication and their database.</p>
       </div>
+      <div class="ribbon ribbon-top-right react"><span>React</span></div>
+      <i class="fas fa-info-circle" onclick="showInfo('todo');"></i>
+      <i class="fab fa-github"></i>
+
+      <a class="site-link" id="to-do" href="https://todo.mattsturdy.co.uk/" target="_blank"></a>
+
     </div>
     <div class="container">
+      <div id="morse" class="hide-info">
+        <p>A quick fire JavaScript challenge with a focus on test driven development, code was not allowed to be written
+          without a failing test to fix!</p>
+      </div>
       <div class="ribbon ribbon-top-right js"><span>JavaScript</span></div>
-      <i class="fas fa-info-circle"></i>
+      <i class="fas fa-info-circle" onclick="showInfo('morse');"></i>
+      <i class="fab fa-github"></i>
       <iframe title="Morse Code website" width="350" height="200"
         src="https://mattsturdy.github.io/morse-code-translator/"></iframe>
     </div>
     <div class="container">
+      <div id="cv" class="hide-info">
+        <p>The first project we did in the initial two weeks of the course, learning aboout HTML CSS styling and a
+          little JavaScript</p>
+      </div>
       <div class="ribbon ribbon-top-right html"><span>HTML CSS</span></div>
-      <i class="fas fa-info-circle"></i>
-      <iframe title="CV website" width="350" height="200" src="https://mattsturdy.github.io/cv-site/"></iframe>
+      <i class="fas fa-info-circle" onclick="showInfo('cv');"></i>
+      <i class="fab fa-github"></i>
+      <a class="site-link" id="cv-image" href="https://mattsturdy.github.io/cv-site/" target="_blank"></a>
     </div>
     <div class="container">
+      <div id="faces" class="hide-info">
+        <p>In our first week of learning React we had a hall of faces challenge to learn about passing different props
+          around the application...</p>
+      </div>
       <div class="ribbon ribbon-top-right react"><span>React</span></div>
-      <i class="fas fa-info-circle"></i>
-      <iframe title="Morse Code website" width="350" height="200" src="https://shea.mattsturdy.co.uk/"></iframe>
+      <i class="fas fa-info-circle" onclick="showInfo('faces');"></i>
+      <i class="fab fa-github"></i>
+      <a class="site-link" id="faces-image" href="https://shea.mattsturdy.co.uk/"></a>
     </div>
     <div class="container">
+      <div id="tug-of-war" class="hide-info">
+        <p>One of our first JavaScript challenges to learn about DOM manipulation, a tug-of-war game you can play right
+          here.</p>
+      </div>
       <div class="ribbon ribbon-top-right js"><span>JavaScript</span></div>
-      <i class="fas fa-info-circle"></i>
-      <iframe title="CV website" width="350" height="200" src="https://mattsturdy.github.io/tug-of-war/"></iframe>
+      <i class="fas fa-info-circle" onclick="showInfo('tug-of-war');"></i>
+      <a href="https://github.com/MattSturdy/tug-of-war" target="_blank"><i class="fab fa-github"></i></a>
+      <iframe title="Tug of War site" width="350" height="200" src="https://mattsturdy.github.io/tug-of-war/"></iframe>
+
     </div>
   </section>
 </body>
