@@ -39,13 +39,13 @@ header {
   transform: scale(1.2);
 }
 .contact-bar .github:hover {
-  background-color: #28A945;
+  background-color: #28a945;
 }
 .contact-bar .linkedin:hover {
   background-color: #007bb5;
 }
 .contact-bar .email:hover {
-  background-color: #D54B3D;
+  background-color: #d54b3d;
 }
 
 .info {
@@ -77,14 +77,16 @@ header {
   flex-wrap: wrap;
 }
 
-.fa-info-circle, .fa-github {
+.fa-info-circle,
+.fa-github {
   color: white;
   font-size: 2em;
   position: absolute;
   top: -23px;
   z-index: -1;
 }
-.fa-info-circle:hover, .fa-github:hover {
+.fa-info-circle:hover,
+.fa-github:hover {
   top: -34px;
   transform: scale(1.2);
   cursor: pointer;
@@ -126,24 +128,31 @@ header {
   width: 1%;
 }
 .hide-info p {
-  width: 1%;
-  height: 1%;
+  margin: auto;
+  width: 60%;
+  height: 100%;
   overflow: hidden;
-  transition: 1s;
+  opacity: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 0s;
+  transition-delay: 0s;
 }
 
 .show-info {
   height: 100%;
   width: 100%;
   opacity: 1;
+  border-radius: unset;
 }
 .show-info p {
   width: 60%;
   height: 100%;
+  transition: 0.4s;
+  transition-delay: 0.75s;
+  opacity: 1;
 }
 
 .ribbon {
@@ -243,6 +252,37 @@ header {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+section {
+  padding: 0px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-bar {
+    top: 18px;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contact-bar a {
+    padding: 0px 2px;
+    margin: 2px;
+  }
+  .contact-bar .github {
+    background-color: #28a945;
+  }
+  .contact-bar .linkedin {
+    background-color: #007bb5;
+  }
+  .contact-bar .email {
+    background-color: #d54b3d;
+  }
+
+  .container {
+    min-width: 350px;
+    min-height: 200px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

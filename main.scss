@@ -21,31 +21,30 @@ header {
   color: white;
 }
 
-.contact-bar{
-  position:fixed;
-  top:50%;
+.contact-bar {
+  position: fixed;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  a{
+  a {
     display: block;
     text-align: center;
     transition: all 0.3s ease;
-    padding:10px;
+    padding: 10px;
     color: white;
     border-radius: 3px;
-    &:hover{
-      
+    &:hover {
       transform: scale(1.2);
     }
   }
-  .github:hover{
-    background-color: #28A945;
+  .github:hover {
+    background-color: #28a945;
   }
-  .linkedin:hover{
+  .linkedin:hover {
     background-color: #007bb5;
   }
-  .email:hover{
-    background-color: #D54B3D;
+  .email:hover {
+    background-color: #d54b3d;
   }
 }
 
@@ -79,23 +78,23 @@ header {
   flex-wrap: wrap;
 }
 
-
-.fa-info-circle, .fa-github{
-  color:white;
+.fa-info-circle,
+.fa-github {
+  color: white;
   font-size: 2em;
   position: absolute;
-  top:-23px;
+  top: -23px;
   z-index: -1;
-  &:hover{
-    top:-34px;
+  &:hover {
+    top: -34px;
     transform: scale(1.2);
     cursor: pointer;
     transition: 0.3s;
   }
 }
 
-.fa-github{
-  left:35px;
+.fa-github {
+  left: 35px;
 }
 
 .container {
@@ -103,7 +102,7 @@ header {
   width: 350px;
   height: 200px;
   background: #fff;
-  box-shadow: -9px 9px 0px 0px rgba(0,0,0,0.2);
+  box-shadow: -9px 9px 0px 0px rgba(0, 0, 0, 0.2);
   margin: 20px 20px;
   z-index: 1;
   .site-link {
@@ -117,38 +116,44 @@ header {
   }
 }
 
-    .hide-info{
-      position: absolute;
-      top: 0;
-      background-color: rgba(42, 49, 64, 0.933);
-      color: white;
-      z-index: 1;
-      transition: 1s;
-      opacity: 0;
-      height: 1%;
-      width: 1%;
- 
-      p{
-        width: 1%;
-        height: 1%;
-        overflow: hidden;
-        transition: 1s;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+.hide-info {
+  position: absolute;
+  top: 0;
+  background-color: rgba(42, 49, 64, 0.933);
+  color: white;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0;
+  height: 1%;
+  width: 1%;
 
-      }
-    }
-        .show-info{
-          height: 100%;
-          width: 100%;
-          opacity: 1;
-          p{
-            width: 60%;
-            height: 100%;
-          }
-        }
+  p {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0s;
+    transition-delay: 0s;
+  }
+}
+.show-info {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  border-radius: unset;
+  p {
+    width: 60%;
+    height: 100%;
+    transition: 0.4s;
+    transition-delay: 0.75s;
+    opacity: 1;
+  }
+}
 
 .ribbon {
   width: 150px;
@@ -231,28 +236,64 @@ header {
   }
 }
 
-#hedira{
-  background-image: url('./img/hedira.PNG');
+#hedira {
+  background-image: url("./img/hedira.PNG");
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
 }
 
-#cv-image{
-  background-image: url('./img/cv.PNG');
+#cv-image {
+  background-image: url("./img/cv.PNG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#to-do{
-  background-image: url('./img/todo.PNG');
+#to-do {
+  background-image: url("./img/todo.PNG");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-#faces-image{
-  background-image: url('./img/face.PNG');
+#faces-image {
+  background-image: url("./img/face.PNG");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
+
+section {
+  padding: 0px 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-bar {
+    top: 18px;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    a {
+      padding: 0px 2px;
+      margin: 2px;
+    }
+    .github {
+      background-color: #28a945;
+    }
+    .linkedin {
+      background-color: #007bb5;
+    }
+    .email {
+      background-color: #d54b3d;
+    }
+  }
+  .container {
+    min-width: 350px;
+    min-height: 200px;
+  }
+}
+// @media only screen and (max-width: 320px) {
+//   .container {
+//     min-width: 300px;
+//     min-height: 180px;
+//   }
+// }
