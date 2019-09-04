@@ -84,6 +84,7 @@ header {
   font-size: 2em;
   position: absolute;
   top: -23px;
+  left: 10px;
   z-index: -1;
   &:hover {
     top: -34px;
@@ -94,7 +95,7 @@ header {
 }
 
 .fa-github {
-  left: 35px;
+  left: 45px;
 }
 
 .container {
@@ -285,7 +286,8 @@ header {
 }
 
 #highlight-git {
-  left: 0;
+  left: 10px;
+  font-size: 2em;
 }
 
 section {
