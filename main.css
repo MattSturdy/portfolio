@@ -226,6 +226,14 @@ header {
   border: 5px solid #08b6d0;
 }
 
+.underconstruction span {
+  font-size: 1em;
+  background: repeating-linear-gradient(45deg, #111007, #111007 10px, #d8cb11 10px, #d8cb11 20px);
+}
+.underconstruction::before, .underconstruction::after {
+  border: 5px solid #837b09;
+}
+
 #hedira {
   background-image: url("./img/hedira.PNG");
   background-size: contain;
@@ -252,6 +260,17 @@ header {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+#battleship-image {
+  background-image: url("./img/battleshipgame.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#highlight-git {
+  left: 0;
 }
 
 section {
